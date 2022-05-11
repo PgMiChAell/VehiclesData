@@ -5,12 +5,10 @@ public class BestNCS {
     int Country;
     int Image;
     String YearsSold;
-    int AmountSold;
-    String Automobile;
 
     //methods
     void describe(){
-        System.out.println("The Car sales for the" + Automobile + ", numbers " + AmountSold + " and the Years Sold were from " + YearsSold  );
+        System.out.println("The Car sales for the" + automobileName + ", numbers " + Amountsold + " and the Years Sold were from " + this.YearsSold  );
     }
 
 }
