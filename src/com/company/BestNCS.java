@@ -1,6 +1,6 @@
 package com.company;
 
-public class BestNCS extends AnyCar {
+private class BestNCS extends AnyCar {
     //fields
     int Country;
     int Image;
