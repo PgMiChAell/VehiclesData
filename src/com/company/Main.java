@@ -8,8 +8,8 @@ public class Main {
         BestNCS Car1 = new BestNCS();
                 Car1.Country = 1;
                 Car1.YearsSold = "1960-2016";
-                Car1 = 3578689;
-                Car1 = " Ford Falcon ";
+                Car1.Amountsold = 3578689;
+                Car1.automobileName = " Ford Falcon ";
                 // michael is  here
 
                 Car1.describe();
