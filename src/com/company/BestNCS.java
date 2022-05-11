@@ -10,7 +10,7 @@ public class BestNCS {
 
     //methods
     void describe(){
-        System.out.println("The Car sales " + Automobile + ", numbers " + AmountSold + " Years Sold " + YearsSold  );
+        System.out.println("The Car sales for the" + Automobile + ", numbers " + AmountSold + " and the Years Sold were from " + YearsSold  );
     }
 
 }
