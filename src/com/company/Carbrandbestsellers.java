@@ -1,10 +1,26 @@
 package com.company;
 
-private class Carbrandbestsellers extends AnyCar {
+public class Carbrandbestsellers extends AnyCar {
    private String Brand;
-   private String YearsSold;
+
+   //Constructer
+
+
+    public Carbrandbestsellers(String automobileName, long amountsold, String yearsSold, String brand) {
+        super(automobileName, amountsold, yearsSold);
+        Brand = brand;
+    }
+
+    // Getter and setters
+    public String getBrand() {
+        return Brand;
+    }
+
+    protected void setBrand(String brand) {
+        Brand = brand;
+    }
 
     void describes(){
-        System.out.println("The Car Brand sells " + automobileName + ", sold "+ Amountsold + " from " +YearsSold);
+        System.out.println("The Car Brand sells " + getAutomobileName() + ", sold "+ getAmountsold() + " from " + getYearsSold());
     }
 }
