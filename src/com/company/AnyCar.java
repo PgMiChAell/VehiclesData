@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class AnyCar {
 
     // # OF USAGES
@@ -7,15 +9,17 @@ public class AnyCar {
     private String automobileName;
     //# of usages
     private long Amountsold;
-    private  String YearsSold;
+    private String YearsSold;
 
-    //constructer
+    //Constructer
+    static ArrayList<AnyCar> allCars = new ArrayList<AnyCar>();
 
 
     public AnyCar(String automobileName, long amountsold, String yearsSold) {
         this.automobileName = automobileName;
         this.Amountsold = amountsold;
         this.YearsSold = yearsSold;
+        allCars.add(this);
     }
 
     public String getYearsSold() {
@@ -41,5 +45,11 @@ public class AnyCar {
 
     public void setAutomobileName(String automobileName) {
         this.automobileName = automobileName;
+
+    }
+
+    static void describeAll() {
+        System.out.println(allCars);
     }
 }
+

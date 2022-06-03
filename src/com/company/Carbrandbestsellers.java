@@ -20,7 +20,7 @@ public class Carbrandbestsellers extends AnyCar {
         Brand = brand;
     }
 
-    void describes(){
-        System.out.println("The Car Brand sells " + getAutomobileName() + ", sold "+ getAmountsold() + " from " + getYearsSold());
+    public String toString(){
+        return "The Car Brand sells " + getAutomobileName() + ", sold "+ getAmountsold() + " from " + getYearsSold();
     }
 }
